@@ -30,7 +30,7 @@
                         <h3 class="login">Login</h3>
                     </li>
                     <li>
-                        <button class="cartButton">My Cart</button>
+                        <button id="cartButton">My Cart</button>
                     </li>
                 </ul>
 
@@ -57,7 +57,8 @@
                 <h1 class="productWgt">400g</h1>
                 <div class="productcardBottom">
                     <h3 class="productPrice">₹32</h3>
-                    <button class="addbutton">Add</button>
+                    <button class="addbutton" onclick="addToCart()">Add</button>
+
                 </div>
             </div>
             <div class="productItem">
@@ -66,7 +67,7 @@
                 <h1 class="productWgt">380g</h1>
                 <div class="productcardBottom">
                     <h3 class="productPrice">₹139</h3>
-                    <button class="addbutton">Add</button>
+                    <button class="addbutton" onclick="addToCart()">Add</button>
                 </div>
             </div>
             <div class="productItem">
@@ -76,7 +77,7 @@
                 <h1 class="productWgt">200g</h1>
                 <div class="productcardBottom">
                     <h3 class="productPrice">₹87</h3>
-                    <button class="addbutton">Add</button>
+                    <button class="addbutton" onclick="addToCart()">Add</button>
                 </div>
             </div>
             <div class="productItem">
@@ -85,7 +86,7 @@
                 <h1 class="productWgt">500g</h1>
                 <div class="productcardBottom">
                     <h3 class="productPrice">₹265</h3>
-                    <button class="addbutton">Add</button>
+                    <button class="addbutton" onclick="addToCart()">Add</button>
                 </div>
             </div>
 
@@ -101,7 +102,7 @@
                 <h1 class="productWgt">40g</h1>
                 <div class="productcardBottom">
                     <h3 class="productPrice">₹20</h3>
-                    <button class="addbutton">Add</button>
+                    <button class="addbutton" onclick="addToCart()">Add</button>
                 </div>
             </div>
             <div class="productItem">
@@ -110,7 +111,7 @@
                 <h1 class="productWgt">1kg</h1>
                 <div class="productcardBottom">
                     <h3 class="productPrice">₹220</h3>
-                    <button class="addbutton">Add</button>
+                    <button class="addbutton" onclick="addToCart()">Add</button>
                 </div>
             </div>
             <div class="productItem">
@@ -119,7 +120,7 @@
                 <h1 class="productWgt">60g</h1>
                 <div class="productcardBottom">
                     <h3 class="productPrice">₹30</h3>
-                    <button class="addbutton">Add</button>
+                    <button class="addbutton" onclick="addToCart()">Add</button>
                 </div>
             </div>
             <div class="productItem">
@@ -128,7 +129,7 @@
                 <h1 class="productWgt">2 x 33g</h1>
                 <div class="productcardBottom">
                     <h3 class="productPrice">₹51</h3>
-                    <button class="addbutton">Add</button>
+                    <button class="addbutton" onclick="addToCart()">Add</button>
                 </div>
             </div>
 
@@ -228,7 +229,19 @@
         <h3>copywrite@Grocery.com</h3>
     </a>
 
+    <script>
+        var num=0;
 
+        function addToCart(){
+            
+            num++;
+            var el  = document.getElementById("cartButton");
+            el.innerHTML="My Cart ("+num+")";
+        
+            
+        }
+
+    </script>
 
 
 </body>
